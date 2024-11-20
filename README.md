@@ -1,6 +1,8 @@
 # bmwmcottawa-analytics
 Data Science Analytics for BMW MC Ottawa
 
+**⚠️ ATTENTION: THIS REPOSITORY DOESN'T HOST ANY CLUB DATA! ⚠️**
+
 ## Dev Environment
 
 - [asdf](https://asdf-vm.com/) - A tool to manage multiple runtime versions with a single CLI.
