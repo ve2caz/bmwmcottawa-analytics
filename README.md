@@ -4,7 +4,8 @@ Data Science Analytics for BMW MC Ottawa
 ## Dev Environment
 
 - [asdf](https://asdf-vm.com/) - A tool to manage multiple runtime versions with a single CLI.
-- [python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - An extension for Python development in Visual Studio Code.
+- [asdf-pipx](https://github.com/pipxproject/asdf-pipx) - A plugin for asdf to manage pipx, a tool to install and run Python applications in isolated environments.
+- [asdf-python](https://github.com/danhper/asdf-python) - A plugin for asdf to manage Python versions.
 - [vscode](https://code.visualstudio.com/) - A source-code editor made by Microsoft for Windows, Linux and macOS.
 - [docker desktop](https://www.docker.com/products/docker-desktop) - An application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.
 
@@ -44,9 +45,28 @@ Data Science Analytics for BMW MC Ottawa
 From within the repository folder run these commands:
 
 ```zsh
+> asdf plugin add pipx
+> asdf plugin add python
 > asdf install
 > python -m venv .venv
 > source .venv/bin/activate
-> pip install -r requirements.txt
+> pip install pip-tools
+> pip-sync requirements-dev.txt requirements.txt
 > code .
+```
+
+## Modifying dependencies
+
+### Update dependencies:
+
+- requirements-dev.in
+- requirements.in
+
+### Compile dependencies:
+
+```zsh
+> source .venv/bin/activate
+> pip-compile --generate-hashes requirements-dev.in
+> pip-compile --generate-hashes
+> pip-sync requirements-dev.txt requirements.txt
 ```

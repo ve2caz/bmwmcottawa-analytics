@@ -44,6 +44,16 @@
         "references": "docs",
         "venv": "environment"
     },
+    "material-icon-theme.files.associations": {
+        "requirements-dev.in": "python",
+        "requirements-dev.txt": "python",
+        "requirements.in": "python",
+        "requirements.txt": "python",
+        "Pipfile": "python",
+        "pyproject.toml": "python",
+        "setup.py": "python",
+        "tox.ini": "python"
+    },
     // Red Hat YAML settings
     "redhat.telemetry.enabled": false,
     // Workbench settings
