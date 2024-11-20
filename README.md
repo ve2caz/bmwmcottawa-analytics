@@ -4,7 +4,7 @@ Data Science Analytics for BMW MC Ottawa
 ## Dev Environment
 
 - [asdf](https://asdf-vm.com/) - A tool to manage multiple runtime versions with a single CLI.
-- [asdf-pipx](https://github.com/pipxproject/asdf-pipx) - A plugin for asdf to manage pipx, a tool to install and run Python applications in isolated environments.
+- [asdf-pipx](https://github.com/yozachar/asdf-pipx) - A plugin for asdf to manage pipx, a tool to install and run Python applications in isolated environments.
 - [asdf-python](https://github.com/danhper/asdf-python) - A plugin for asdf to manage Python versions.
 - [vscode](https://code.visualstudio.com/) - A source-code editor made by Microsoft for Windows, Linux and macOS.
 - [docker desktop](https://www.docker.com/products/docker-desktop) - An application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.
@@ -22,7 +22,7 @@ Data Science Analytics for BMW MC Ottawa
 ### AI
 - [github.copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) - Your AI pair programmer.
 - [github.copilot-chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) - Chat with your AI pair programmer.
-- [visualstudioexptteam.intellicode-api-usage-examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-api-usage-examples) - API usage examples powered by IntelliCode.
+- [visualstudioexptteam.intellicode-api-usage-examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples) - API usage examples powered by IntelliCode.
 - [visualstudioexptteam.vscodeintellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - AI-assisted code completions.
 
 ### Language Support
