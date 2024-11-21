@@ -1,4 +1,6 @@
 {
+    // Data Wrandler
+    "dataWrangler.useRelativePath": true,
     // Editor settings
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
