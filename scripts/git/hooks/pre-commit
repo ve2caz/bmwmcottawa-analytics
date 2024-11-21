@@ -1,7 +1,21 @@
 #!/bin/zsh
 
 echo "Pre-commit hook is running"
-exit 1
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <notebook.ipynb>"
+    exit 1
+fi
+
+if ! command -v jq > /dev/null 2>&1; then
+    echo "Error: jq is not installed."
+    exit 1
+fi
+
+notebook="$1"
+echo "Processing notebook: $notebook"
+
+exit 2
 
 #
 # This script removes metadata and outputs from cells in a notebook.
