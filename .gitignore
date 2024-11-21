@@ -1,5 +1,7 @@
 # Ignoring data files
-/data/*
+/data/interim
+/data/processed
+/data/raw
 !/data/.gitkeep
 !/data/README.md
 !/data/LICENSE
