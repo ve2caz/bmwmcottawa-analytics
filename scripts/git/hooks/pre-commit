@@ -1,4 +1,8 @@
 #!/bin/zsh
+
+echo "Pre-commit hook is running"
+exit 1
+
 #
 # This script removes metadata and outputs from cells in a notebook.
 #
