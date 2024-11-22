@@ -37,12 +37,16 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false, // Disable pylint if using Ruff
     "python.linting.flake8Enabled": false, // Disable flake8 if using Ruff
-    // Ruff settings (assuming Ruff is configured as a linter)
+    // Ruff python settings (assuming Ruff is configured as a linter)
     "python.linting.ruffEnabled": true,
     "python.linting.ruffArgs": [
         "--fix"
     ],
     "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    // Ruff settings
+    "ruff.logLevel": "debug",
+    // Ruff native server settings
+    "ruff.nativeServer": "auto", // Options: auto, on, off
     // Red Hat YAML settings
     "redhat.telemetry.enabled": false,
     // Terminal buffer setting

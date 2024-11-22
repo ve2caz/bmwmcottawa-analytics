@@ -1,1 +1,1 @@
-from bmwmcottawa_analytics import config  # noqa: F401
+from bmwmcottawa_analytics import config  # noqa: F401,
