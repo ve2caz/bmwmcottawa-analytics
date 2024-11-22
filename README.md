@@ -72,3 +72,8 @@ From within the repository folder run these commands:
 > pip-compile --generate-hashes
 > pip-sync requirements-dev.txt requirements.txt
 ```
+
+## Preventing Notebook Data Leakage
+
+- Run the `Run Strip All Notebooks` task which will strip the metadata and outputs from the Jupyter Notebooks.
+- Then stage and commit the changes to git.
