@@ -4,7 +4,18 @@
         {
             "label": "Run Strip All Notebooks",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/strip-all-notebooks.zsh",
+            "command": "${workspaceFolder}/scripts/tasks/strip-all-notebooks.zsh",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Update Dependencies",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/tasks/update-dependencies.zsh",
             "args": [],
             "group": {
                 "kind": "build",

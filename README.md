@@ -13,7 +13,9 @@ Data Science Analytics for BMW MC Ottawa
 
 ### VS Code Experience
 - [akamud.vscode-theme-onedark](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark) - A One Dark theme for Visual Studio Code.
+- [charliermarsh.ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff) - An extremely fast Python linter, written in Rust.
 - [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Supercharge the Git capabilities built into Visual Studio Code.
+- [ms-python.black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) - A formatter for Python files using the uncompromising Black code style.
 - [pkief.material-icon-theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - Material Design Icons for Visual Studio Code.
 - [slevesque.vscode-zipexplorer](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-zipexplorer) - A VS Code extension to explore ZIP files.
 
