@@ -5,41 +5,10 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
-    // Python settings
-    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false, // Disable pylint if using Ruff
-    "python.linting.flake8Enabled": false, // Disable flake8 if using Ruff
-    "python.formatting.provider": "black",
-    // Python-specific editor settings
-    "[python]": {
-        "editor.formatOnType": true, // Format code as you type
-        "editor.defaultFormatter": "ms-python.black-formatter" // Use Black as the default formatter
-    },
-    // Ruff settings (assuming Ruff is configured as a linter)
-    "python.linting.ruffEnabled": true,
-    "python.linting.ruffArgs": [
-        "--fix"
-    ], // Automatically fix issues where possible
+    // Automatically fix issues where possible
     // This setting enables the execution of selected code in the Jupyter interactive window
     // when using the text editor in Visual Studio Code.
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
-    // GitLens settings
-    "gitlens.advanced.messages": {
-        "suppressGitLensPlusMessages": true
-    },
-    "gitlens.launchpad.indicator.enabled": false,
-    "gitlens.views.commitGraph.enabled": false,
-    "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.repositories.showBranches": false,
-    "gitlens.views.repositories.showCommits": false,
-    "gitlens.views.repositories.showContributors": false,
-    "gitlens.views.repositories.showFileHistory": false,
-    "gitlens.views.repositories.showLineHistory": false,
-    "gitlens.views.repositories.showRemotes": false,
-    "gitlens.views.repositories.showStashes": false,
-    "gitlens.views.repositories.showTags": false,
-    "gitlens.views.repositories.showWorktrees": false,
     // Material Icon Theme settings
     "material-icon-theme.folders.associations": {
         "modeling": "generator",
@@ -56,8 +25,44 @@
         "setup.py": "python",
         "tox.ini": "python"
     },
+    // Jupyter settings
+    "notebook.formatOnSave.enabled": true,
+    // Python-specific editor settings
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter", // Use Black Formatter extension as the default
+        "editor.formatOnType": true, // Format code as you type
+    },
+    // Python settings
+    "python.formatting.provider": "black", // Use Black as the default formatter
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false, // Disable pylint if using Ruff
+    "python.linting.flake8Enabled": false, // Disable flake8 if using Ruff
+    // Ruff settings (assuming Ruff is configured as a linter)
+    "python.linting.ruffEnabled": true,
+    "python.linting.ruffArgs": [
+        "--fix"
+    ],
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
     // Red Hat YAML settings
     "redhat.telemetry.enabled": false,
+    // Terminal buffer setting
+    "terminal.integrated.scrollback": 10000,
     // Workbench settings
     "workbench.iconTheme": "material-icon-theme",
+    // GitLens settings: DISABLE NAGGING FEATURES!
+    "gitlens.advanced.messages": {
+        "suppressGitLensPlusMessages": true
+    },
+    "gitlens.launchpad.indicator.enabled": false,
+    "gitlens.views.commitGraph.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.repositories.showBranches": false,
+    "gitlens.views.repositories.showCommits": false,
+    "gitlens.views.repositories.showContributors": false,
+    "gitlens.views.repositories.showFileHistory": false,
+    "gitlens.views.repositories.showLineHistory": false,
+    "gitlens.views.repositories.showRemotes": false,
+    "gitlens.views.repositories.showStashes": false,
+    "gitlens.views.repositories.showTags": false,
+    "gitlens.views.repositories.showWorktrees": false,
 }
