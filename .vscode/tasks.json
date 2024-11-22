@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Strip All Notebooks",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/strip-all-notebooks.zsh",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+FILE="$1"
+
+echo "Pre-commit hook is running"
+
+# Check if the file has a .ipynb extension
+if [[ "$FILE" != *.ipynb ]]; then
+	echo "The file is not a Jupyter notebook (.ipynb). Skipping."
+	exit 0
+fi
+
+# Check if git is providing it with a file to check
+if [ -z "$1" ]; then
+	echo "Usage: $0 <file>"
+	exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq > /dev/null 2>&1; then
+	echo "Error: jq is not installed."
+	exit 2
+fi
+
+echo "Processing file: $FILE"
+
+jq '
+	.cells |= map(
+		if .cell_type == "code" then
+			.outputs = [] | .metadata = {} | .execution_count = null
+		else
+			.
+		end
+	)
+' "$FILE" > tmp.$$.ipynb && mv tmp.$$.ipynb "$FILE"
