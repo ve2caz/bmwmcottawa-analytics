@@ -57,7 +57,7 @@ find . -name "*.ipynb" | while read notebook; do
     jq '
         .cells |= map(
             if .cell_type == "code" then
-                .outputs = [] | .metadata = {} | .execution_count = null
+                .outputs = [] | .execution_count = null
             else
                 .
             end
