@@ -1,20 +1,44 @@
 {
-    // Data Wrandler
+    // Enable the use of relative paths in Data Wrangler
     "dataWrangler.useRelativePath": true,
     // Editor settings
+    // Set the tab size to 4 spaces
     "editor.tabSize": 4,
+    // Insert spaces when pressing Tab
     "editor.insertSpaces": true,
+    // Automatically format the document on save
     "editor.formatOnSave": true,
-    // Automatically fix issues where possible
-    // This setting enables the execution of selected code in the Jupyter interactive window
-    // when using the text editor in Visual Studio Code.
+    // GitLens settings
+    // Suppress GitLens Plus messages
+    "gitlens.advanced.messages": {
+        "suppressGitLensPlusMessages": true
+    },
+    // Disable the GitLens launchpad indicator
+    "gitlens.launchpad.indicator.enabled": false,
+    // Disable the GitLens commit graph view
+    "gitlens.views.commitGraph.enabled": false,
+    // Disable the GitLens file history view
+    "gitlens.views.fileHistory.enabled": false,
+    // Disable various GitLens repository views
+    "gitlens.views.repositories.showBranches": false,
+    "gitlens.views.repositories.showCommits": false,
+    "gitlens.views.repositories.showContributors": false,
+    "gitlens.views.repositories.showFileHistory": false,
+    "gitlens.views.repositories.showLineHistory": false,
+    "gitlens.views.repositories.showRemotes": false,
+    "gitlens.views.repositories.showStashes": false,
+    "gitlens.views.repositories.showTags": false,
+    "gitlens.views.repositories.showWorktrees": false,
+    // Enable execution of selected code in the Jupyter interactive window
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     // Material Icon Theme settings
+    // Associate folder names with specific icons
     "material-icon-theme.folders.associations": {
         "modeling": "generator",
         "references": "docs",
         "venv": "environment"
     },
+    // Associate file names with specific icons
     "material-icon-theme.files.associations": {
         "requirements-dev.in": "python",
         "requirements-dev.txt": "python",
@@ -25,48 +49,48 @@
         "setup.py": "python",
         "tox.ini": "python"
     },
-    // Jupyter settings
+    // Enable format on save for Jupyter notebooks
     "notebook.formatOnSave.enabled": true,
     // Python-specific editor settings
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter", // Use Black Formatter extension as the default
-        "editor.formatOnType": true, // Format code as you type
+        // Use Black Formatter extension as the default formatter
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        // Format code as you type
+        "editor.formatOnType": true,
     },
     // Python settings
-    "python.formatting.provider": "black", // Use Black as the default formatter
+    // Use Black as the default formatter
+    "python.formatting.provider": "black",
+    // Enable linting
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false, // Disable pylint if using Ruff
-    "python.linting.flake8Enabled": false, // Disable flake8 if using Ruff
-    // Ruff python settings (assuming Ruff is configured as a linter)
+    // Disable pylint if using Ruff
+    "python.linting.pylintEnabled": false,
+    // Disable flake8 if using Ruff
+    "python.linting.flake8Enabled": false,
+    // Enable Ruff as a linter
     "python.linting.ruffEnabled": true,
+    // Pass arguments to Ruff
     "python.linting.ruffArgs": [
         "--fix"
     ],
+    // Set the Python interpreter path
     "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
     // Ruff settings
-    "ruff.logLevel": "error", // Options: debug, info, warning, error
-    // Ruff native server settings
-    "ruff.nativeServer": "auto", // Options: auto, on, off
+    // Set the log level for Ruff
+    "ruff.logLevel": "debug", // "error", "warning", "info", "debug"
+    // Trace server messages for Ruff
+    "ruff.trace.server": "messages", // "off", "messages", "verbose"
+    // Enable Ruff native server
+    "ruff.nativeServer": "on", // "off", "on", "auto"
+    // Set the configuration file for Ruff
+    "ruff.configuration": "${workspaceFolder}/pyproject.toml",
     // Red Hat YAML settings
+    // Disable Red Hat telemetry
     "redhat.telemetry.enabled": false,
     // Terminal buffer setting
+    // Set the terminal scrollback buffer size
     "terminal.integrated.scrollback": 10000,
     // Workbench settings
+    // Set the icon theme for the workbench
     "workbench.iconTheme": "material-icon-theme",
-    // GitLens settings: DISABLE NAGGING FEATURES!
-    "gitlens.advanced.messages": {
-        "suppressGitLensPlusMessages": true
-    },
-    "gitlens.launchpad.indicator.enabled": false,
-    "gitlens.views.commitGraph.enabled": false,
-    "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.repositories.showBranches": false,
-    "gitlens.views.repositories.showCommits": false,
-    "gitlens.views.repositories.showContributors": false,
-    "gitlens.views.repositories.showFileHistory": false,
-    "gitlens.views.repositories.showLineHistory": false,
-    "gitlens.views.repositories.showRemotes": false,
-    "gitlens.views.repositories.showStashes": false,
-    "gitlens.views.repositories.showTags": false,
-    "gitlens.views.repositories.showWorktrees": false,
 }
