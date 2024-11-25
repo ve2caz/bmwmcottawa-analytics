@@ -44,7 +44,7 @@
     ],
     "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
     // Ruff settings
-    "ruff.logLevel": "debug",
+    "ruff.logLevel": "error", // Options: debug, info, warning, error
     // Ruff native server settings
     "ruff.nativeServer": "auto", // Options: auto, on, off
     // Red Hat YAML settings
